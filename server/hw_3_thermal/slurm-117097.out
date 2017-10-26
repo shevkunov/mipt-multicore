@@ -1,0 +1,2101 @@
+/tmp/slurmd/job117097/slurm_script: line 17: mpicc: команда не найдена
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 0 of 1 ready.
+After finalize. Process 0
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 0 of 1 ready.
+After finalize. Process 0
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 0 of 1 ready.
+After finalize. Process 0
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 0 of 1 ready.
+After finalize. Process 0
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 0 of 1 ready.
+After finalize. Process 0
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 1 of 2 ready.
+Process 0 of 2 ready.
+After finalize. Process 1
+After finalize. Process 0
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 0 of 2 ready.
+Process 1 of 2 ready.
+After finalize. Process 1
+After finalize. Process 0
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 0 of 2 ready.
+Process 1 of 2 ready.
+After finalize. Process 0
+After finalize. Process 1
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 0 of 2 ready.
+Process 1 of 2 ready.
+After finalize. Process 1
+After finalize. Process 0
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 0 of 2 ready.
+Process 1 of 2 ready.
+After finalize. Process 1
+After finalize. Process 0
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 0 of 3 ready.
+Process 1 of 3 ready.
+Process 2 of 3 ready.
+After finalize. Process 0
+After finalize. Process 1
+After finalize. Process 2
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 0 of 3 ready.
+Process 1 of 3 ready.
+Process 2 of 3 ready.
+After finalize. Process 1
+After finalize. Process 0
+After finalize. Process 2
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 0 of 3 ready.
+Process 2 of 3 ready.
+Process 1 of 3 ready.
+After finalize. Process 2
+After finalize. Process 0
+After finalize. Process 1
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 0 of 3 ready.
+Process 2 of 3 ready.
+Process 1 of 3 ready.
+After finalize. Process 2
+After finalize. Process 0
+After finalize. Process 1
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 2 of 3 ready.
+Process 0 of 3 ready.
+Process 1 of 3 ready.
+After finalize. Process 0
+After finalize. Process 1
+After finalize. Process 2
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 0 of 4 ready.
+Process 2 of 4 ready.
+Process 1 of 4 ready.
+Process 3 of 4 ready.
+After finalize. Process 0
+After finalize. Process 3
+After finalize. Process 1
+After finalize. Process 2
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 2 of 4 ready.
+Process 3 of 4 ready.
+Process 0 of 4 ready.
+Process 1 of 4 ready.
+After finalize. Process 3
+After finalize. Process 2
+After finalize. Process 1
+After finalize. Process 0
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 3 of 4 ready.
+Process 0 of 4 ready.
+Process 2 of 4 ready.
+Process 1 of 4 ready.
+After finalize. Process 3
+After finalize. Process 2
+After finalize. Process 0
+After finalize. Process 1
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 0 of 4 ready.
+Process 2 of 4 ready.
+Process 3 of 4 ready.
+Process 1 of 4 ready.
+After finalize. Process 1
+After finalize. Process 3
+After finalize. Process 2
+After finalize. Process 0
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 0 of 4 ready.
+Process 2 of 4 ready.
+Process 3 of 4 ready.
+Process 1 of 4 ready.
+After finalize. Process 1
+After finalize. Process 3
+After finalize. Process 2
+After finalize. Process 0
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 1 of 5 ready.
+Process 2 of 5 ready.
+Process 0 of 5 ready.
+Process 3 of 5 ready.
+Process 4 of 5 ready.
+After finalize. Process 3
+After finalize. Process 2
+After finalize. Process 1
+After finalize. Process 0
+After finalize. Process 4
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 0 of 5 ready.
+Process 2 of 5 ready.
+Process 3 of 5 ready.
+Process 1 of 5 ready.
+Process 4 of 5 ready.
+After finalize. Process 3
+After finalize. Process 4
+After finalize. Process 0
+After finalize. Process 1
+After finalize. Process 2
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 3 of 5 ready.
+Process 0 of 5 ready.
+Process 2 of 5 ready.
+Process 1 of 5 ready.
+Process 4 of 5 ready.
+After finalize. Process 0
+After finalize. Process 1
+After finalize. Process 2
+After finalize. Process 3
+After finalize. Process 4
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 1 of 5 ready.
+Process 2 of 5 ready.
+Process 3 of 5 ready.
+Process 0 of 5 ready.
+Process 4 of 5 ready.
+After finalize. Process 0
+After finalize. Process 4
+After finalize. Process 3
+After finalize. Process 1
+After finalize. Process 2
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 3 of 5 ready.
+Process 1 of 5 ready.
+Process 4 of 5 ready.
+Process 0 of 5 ready.
+Process 2 of 5 ready.
+After finalize. Process 4
+After finalize. Process 3
+After finalize. Process 0
+After finalize. Process 2
+After finalize. Process 1
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 0 of 6 ready.
+Process 1 of 6 ready.
+Process 3 of 6 ready.
+Process 5 of 6 ready.
+Process 4 of 6 ready.
+Process 2 of 6 ready.
+After finalize. Process 4
+After finalize. Process 0
+After finalize. Process 3
+After finalize. Process 1
+After finalize. Process 5
+After finalize. Process 2
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 5 of 6 ready.
+Process 3 of 6 ready.
+Process 0 of 6 ready.
+Process 2 of 6 ready.
+Process 1 of 6 ready.
+Process 4 of 6 ready.
+After finalize. Process 5
+After finalize. Process 2
+After finalize. Process 0
+After finalize. Process 3
+After finalize. Process 1
+After finalize. Process 4
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 3 of 6 ready.
+Process 1 of 6 ready.
+Process 0 of 6 ready.
+Process 5 of 6 ready.
+Process 2 of 6 ready.
+Process 4 of 6 ready.
+After finalize. Process 5
+After finalize. Process 3
+After finalize. Process 2
+After finalize. Process 4
+After finalize. Process 0
+After finalize. Process 1
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 4 of 6 ready.
+Process 5 of 6 ready.
+Process 3 of 6 ready.
+Process 2 of 6 ready.
+Process 1 of 6 ready.
+Process 0 of 6 ready.
+After finalize. Process 5
+After finalize. Process 0
+After finalize. Process 1
+After finalize. Process 2
+After finalize. Process 3
+After finalize. Process 4
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 4 of 6 ready.
+Process 0 of 6 ready.
+Process 2 of 6 ready.
+Process 3 of 6 ready.
+Process 1 of 6 ready.
+Process 5 of 6 ready.
+After finalize. Process 0
+After finalize. Process 2
+After finalize. Process 4
+After finalize. Process 3
+After finalize. Process 5
+After finalize. Process 1
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 5 of 7 ready.
+Process 3 of 7 ready.
+Process 4 of 7 ready.
+Process 6 of 7 ready.
+Process 0 of 7 ready.
+Process 1 of 7 ready.
+Process 2 of 7 ready.
+After finalize. Process 3
+After finalize. Process 1
+After finalize. Process 4
+After finalize. Process 2
+After finalize. Process 0
+After finalize. Process 5
+After finalize. Process 6
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 2 of 7 ready.
+Process 1 of 7 ready.
+Process 5 of 7 ready.
+Process 0 of 7 ready.
+Process 3 of 7 ready.
+Process 6 of 7 ready.
+Process 4 of 7 ready.
+After finalize. Process 0
+After finalize. Process 6
+After finalize. Process 1
+After finalize. Process 2
+After finalize. Process 5
+After finalize. Process 3
+After finalize. Process 4
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 5 of 7 ready.
+Process 3 of 7 ready.
+Process 6 of 7 ready.
+Process 1 of 7 ready.
+Process 0 of 7 ready.
+Process 2 of 7 ready.
+Process 4 of 7 ready.
+After finalize. Process 1
+After finalize. Process 5
+After finalize. Process 3
+After finalize. Process 2
+After finalize. Process 6
+After finalize. Process 0
+After finalize. Process 4
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 6 of 7 ready.
+Process 4 of 7 ready.
+Process 3 of 7 ready.
+Process 5 of 7 ready.
+Process 1 of 7 ready.
+Process 2 of 7 ready.
+Process 0 of 7 ready.
+After finalize. Process 5
+After finalize. Process 1
+After finalize. Process 6
+After finalize. Process 3
+After finalize. Process 2
+After finalize. Process 0
+After finalize. Process 4
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 5 of 7 ready.
+Process 6 of 7 ready.
+Process 4 of 7 ready.
+Process 3 of 7 ready.
+Process 2 of 7 ready.
+Process 1 of 7 ready.
+Process 0 of 7 ready.
+After finalize. Process 4
+After finalize. Process 5
+After finalize. Process 2
+After finalize. Process 1
+After finalize. Process 3
+After finalize. Process 6
+After finalize. Process 0
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 5 of 8 ready.
+Process 3 of 8 ready.
+Process 4 of 8 ready.
+Process 7 of 8 ready.
+Process 2 of 8 ready.
+Process 0 of 8 ready.
+Process 1 of 8 ready.
+Process 6 of 8 ready.
+After finalize. Process 5
+After finalize. Process 3
+After finalize. Process 0
+After finalize. Process 7
+After finalize. Process 6
+After finalize. Process 1
+After finalize. Process 2
+After finalize. Process 4
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 5 of 8 ready.
+Process 7 of 8 ready.
+Process 6 of 8 ready.
+Process 2 of 8 ready.
+Process 3 of 8 ready.
+Process 1 of 8 ready.
+Process 0 of 8 ready.
+Process 4 of 8 ready.
+After finalize. Process 0
+After finalize. Process 7
+After finalize. Process 1
+After finalize. Process 3
+After finalize. Process 4
+After finalize. Process 5
+After finalize. Process 2
+After finalize. Process 6
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 7 of 8 ready.
+Process 1 of 8 ready.
+Process 3 of 8 ready.
+Process 5 of 8 ready.
+Process 2 of 8 ready.
+Process 6 of 8 ready.
+Process 4 of 8 ready.
+Process 0 of 8 ready.
+After finalize. Process 3
+After finalize. Process 6
+After finalize. Process 2
+After finalize. Process 5
+After finalize. Process 0
+After finalize. Process 1
+After finalize. Process 7
+After finalize. Process 4
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 5 of 8 ready.
+Process 7 of 8 ready.
+Process 4 of 8 ready.
+Process 0 of 8 ready.
+Process 2 of 8 ready.
+Process 1 of 8 ready.
+Process 3 of 8 ready.
+Process 6 of 8 ready.
+After finalize. Process 4
+After finalize. Process 5
+After finalize. Process 0
+After finalize. Process 3
+After finalize. Process 2
+After finalize. Process 1
+After finalize. Process 7
+After finalize. Process 6
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 1 of 8 ready.
+Process 3 of 8 ready.
+Process 4 of 8 ready.
+Process 0 of 8 ready.
+Process 2 of 8 ready.
+Process 7 of 8 ready.
+Process 6 of 8 ready.
+Process 5 of 8 ready.
+After finalize. Process 0
+After finalize. Process 4
+After finalize. Process 7
+After finalize. Process 5
+After finalize. Process 6
+After finalize. Process 3
+After finalize. Process 1
+After finalize. Process 2
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 5 of 9 ready.
+Process 6 of 9 ready.
+Process 7 of 9 ready.
+Process 4 of 9 ready.
+Process 8 of 9 ready.
+Process 3 of 9 ready.
+Process 1 of 9 ready.
+Process 2 of 9 ready.
+Process 0 of 9 ready.
+After finalize. Process 7
+After finalize. Process 8
+After finalize. Process 6
+After finalize. Process 4
+After finalize. Process 5
+After finalize. Process 3
+After finalize. Process 2
+After finalize. Process 0
+After finalize. Process 1
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 5 of 9 ready.
+Process 3 of 9 ready.
+Process 4 of 9 ready.
+Process 0 of 9 ready.
+Process 7 of 9 ready.
+Process 6 of 9 ready.
+Process 1 of 9 ready.
+Process 2 of 9 ready.
+Process 8 of 9 ready.
+After finalize. Process 5
+After finalize. Process 2
+After finalize. Process 6
+After finalize. Process 8
+After finalize. Process 7
+After finalize. Process 0
+After finalize. Process 4
+After finalize. Process 3
+After finalize. Process 1
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 7 of 9 ready.
+Process 5 of 9 ready.
+Process 6 of 9 ready.
+Process 1 of 9 ready.
+Process 3 of 9 ready.
+Process 4 of 9 ready.
+Process 0 of 9 ready.
+Process 2 of 9 ready.
+Process 8 of 9 ready.
+After finalize. Process 5
+After finalize. Process 2
+After finalize. Process 6
+After finalize. Process 1
+After finalize. Process 7
+After finalize. Process 8
+After finalize. Process 4
+After finalize. Process 3
+After finalize. Process 0
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 5 of 9 ready.
+Process 7 of 9 ready.
+Process 6 of 9 ready.
+Process 8 of 9 ready.
+Process 3 of 9 ready.
+Process 0 of 9 ready.
+Process 2 of 9 ready.
+Process 4 of 9 ready.
+Process 1 of 9 ready.
+After finalize. Process 3
+After finalize. Process 7
+After finalize. Process 6
+After finalize. Process 1
+After finalize. Process 2
+After finalize. Process 5
+After finalize. Process 0
+After finalize. Process 8
+After finalize. Process 4
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 3 of 9 ready.
+Process 7 of 9 ready.
+Process 6 of 9 ready.
+Process 5 of 9 ready.
+Process 8 of 9 ready.
+Process 0 of 9 ready.
+Process 1 of 9 ready.
+Process 4 of 9 ready.
+Process 2 of 9 ready.
+After finalize. Process 7
+After finalize. Process 0
+After finalize. Process 2
+After finalize. Process 3
+After finalize. Process 6
+After finalize. Process 4
+After finalize. Process 1
+After finalize. Process 5
+After finalize. Process 8
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 5 of 10 ready.
+Process 7 of 10 ready.
+Process 9 of 10 ready.
+Process 2 of 10 ready.
+Process 6 of 10 ready.
+Process 0 of 10 ready.
+Process 4 of 10 ready.
+Process 3 of 10 ready.
+Process 8 of 10 ready.
+Process 1 of 10 ready.
+After finalize. Process 8
+After finalize. Process 4
+After finalize. Process 5
+After finalize. Process 0
+After finalize. Process 6
+After finalize. Process 7
+After finalize. Process 2
+After finalize. Process 1
+After finalize. Process 9
+After finalize. Process 3
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 5 of 10 ready.
+Process 7 of 10 ready.
+Process 9 of 10 ready.
+Process 4 of 10 ready.
+Process 3 of 10 ready.
+Process 0 of 10 ready.
+Process 8 of 10 ready.
+Process 6 of 10 ready.
+Process 1 of 10 ready.
+Process 2 of 10 ready.
+After finalize. Process 2
+After finalize. Process 0
+After finalize. Process 9
+After finalize. Process 3
+After finalize. Process 1
+After finalize. Process 4
+After finalize. Process 6
+After finalize. Process 5
+After finalize. Process 7
+After finalize. Process 8
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 9 of 10 ready.
+Process 8 of 10 ready.
+Process 4 of 10 ready.
+Process 5 of 10 ready.
+Process 6 of 10 ready.
+Process 7 of 10 ready.
+Process 0 of 10 ready.
+Process 3 of 10 ready.
+Process 1 of 10 ready.
+Process 2 of 10 ready.
+After finalize. Process 3
+After finalize. Process 4
+After finalize. Process 6
+After finalize. Process 9
+After finalize. Process 5
+After finalize. Process 0
+After finalize. Process 7
+After finalize. Process 2
+After finalize. Process 8
+After finalize. Process 1
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 1 of 10 ready.
+Process 3 of 10 ready.
+Process 2 of 10 ready.
+Process 0 of 10 ready.
+Process 7 of 10 ready.
+Process 9 of 10 ready.
+Process 6 of 10 ready.
+Process 4 of 10 ready.
+Process 5 of 10 ready.
+Process 8 of 10 ready.
+After finalize. Process 8
+After finalize. Process 2
+After finalize. Process 9
+After finalize. Process 1
+After finalize. Process 0
+After finalize. Process 4
+After finalize. Process 7
+After finalize. Process 6
+After finalize. Process 3
+After finalize. Process 5
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 9 of 10 ready.
+Process 7 of 10 ready.
+Process 8 of 10 ready.
+Process 3 of 10 ready.
+Process 6 of 10 ready.
+Process 1 of 10 ready.
+Process 0 of 10 ready.
+Process 4 of 10 ready.
+Process 2 of 10 ready.
+Process 5 of 10 ready.
+After finalize. Process 5
+After finalize. Process 0
+After finalize. Process 9
+After finalize. Process 7
+After finalize. Process 1
+After finalize. Process 6
+After finalize. Process 4
+After finalize. Process 8
+After finalize. Process 2
+After finalize. Process 3
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 5 of 11 ready.
+Process 7 of 11 ready.
+Process 9 of 11 ready.
+Process 3 of 11 ready.
+Process 4 of 11 ready.
+Process 6 of 11 ready.
+Process 8 of 11 ready.
+Process 0 of 11 ready.
+Process 2 of 11 ready.
+Process 10 of 11 ready.
+Process 1 of 11 ready.
+After finalize. Process 9
+After finalize. Process 6
+After finalize. Process 3
+After finalize. Process 1
+After finalize. Process 2
+After finalize. Process 10
+After finalize. Process 0
+After finalize. Process 7
+After finalize. Process 5
+After finalize. Process 8
+After finalize. Process 4
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 6 of 11 ready.
+Process 7 of 11 ready.
+Process 9 of 11 ready.
+Process 10 of 11 ready.
+Process 1 of 11 ready.
+Process 5 of 11 ready.
+Process 4 of 11 ready.
+Process 0 of 11 ready.
+Process 8 of 11 ready.
+Process 2 of 11 ready.
+Process 3 of 11 ready.
+After finalize. Process 9
+After finalize. Process 4
+After finalize. Process 6
+After finalize. Process 7
+After finalize. Process 2
+After finalize. Process 8
+After finalize. Process 10
+After finalize. Process 3
+After finalize. Process 5
+After finalize. Process 0
+After finalize. Process 1
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 1 of 11 ready.
+Process 3 of 11 ready.
+Process 9 of 11 ready.
+Process 7 of 11 ready.
+Process 10 of 11 ready.
+Process 0 of 11 ready.
+Process 5 of 11 ready.
+Process 8 of 11 ready.
+Process 2 of 11 ready.
+Process 4 of 11 ready.
+Process 6 of 11 ready.
+After finalize. Process 8
+After finalize. Process 7
+After finalize. Process 2
+After finalize. Process 6
+After finalize. Process 0
+After finalize. Process 9
+After finalize. Process 5
+After finalize. Process 1
+After finalize. Process 10
+After finalize. Process 3
+After finalize. Process 4
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 3 of 11 ready.
+Process 1 of 11 ready.
+Process 9 of 11 ready.
+Process 7 of 11 ready.
+Process 4 of 11 ready.
+Process 0 of 11 ready.
+Process 8 of 11 ready.
+Process 10 of 11 ready.
+Process 6 of 11 ready.
+Process 5 of 11 ready.
+Process 2 of 11 ready.
+After finalize. Process 4
+After finalize. Process 5
+After finalize. Process 6
+After finalize. Process 1
+After finalize. Process 8
+After finalize. Process 10
+After finalize. Process 3
+After finalize. Process 0
+After finalize. Process 2
+After finalize. Process 7
+After finalize. Process 9
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 4 of 11 ready.
+Process 6 of 11 ready.
+Process 7 of 11 ready.
+Process 5 of 11 ready.
+Process 2 of 11 ready.
+Process 0 of 11 ready.
+Process 1 of 11 ready.
+Process 9 of 11 ready.
+Process 10 of 11 ready.
+Process 3 of 11 ready.
+Process 8 of 11 ready.
+After finalize. Process 6
+After finalize. Process 0
+After finalize. Process 10
+After finalize. Process 2
+After finalize. Process 7
+After finalize. Process 5
+After finalize. Process 1
+After finalize. Process 3
+After finalize. Process 9
+After finalize. Process 8
+After finalize. Process 4
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 5 of 12 ready.
+Process 1 of 12 ready.
+Process 3 of 12 ready.
+Process 0 of 12 ready.
+Process 2 of 12 ready.
+Process 11 of 12 ready.
+Process 4 of 12 ready.
+Process 10 of 12 ready.
+Process 6 of 12 ready.
+Process 9 of 12 ready.
+Process 7 of 12 ready.
+Process 8 of 12 ready.
+After finalize. Process 2
+After finalize. Process 1
+After finalize. Process 3
+After finalize. Process 5
+After finalize. Process 0
+After finalize. Process 11
+After finalize. Process 9
+After finalize. Process 6
+After finalize. Process 4
+After finalize. Process 10
+After finalize. Process 8
+After finalize. Process 7
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 5 of 12 ready.
+Process 7 of 12 ready.
+Process 9 of 12 ready.
+Process 2 of 12 ready.
+Process 3 of 12 ready.
+Process 6 of 12 ready.
+Process 8 of 12 ready.
+Process 11 of 12 ready.
+Process 1 of 12 ready.
+Process 10 of 12 ready.
+Process 0 of 12 ready.
+Process 4 of 12 ready.
+After finalize. Process 6
+After finalize. Process 7
+After finalize. Process 1
+After finalize. Process 2
+After finalize. Process 5
+After finalize. Process 11
+After finalize. Process 9
+After finalize. Process 0
+After finalize. Process 4
+After finalize. Process 8
+After finalize. Process 3
+After finalize. Process 10
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 9 of 12 ready.
+Process 11 of 12 ready.
+Process 10 of 12 ready.
+Process 3 of 12 ready.
+Process 2 of 12 ready.
+Process 7 of 12 ready.
+Process 8 of 12 ready.
+Process 5 of 12 ready.
+Process 0 of 12 ready.
+Process 1 of 12 ready.
+Process 4 of 12 ready.
+Process 6 of 12 ready.
+After finalize. Process 11
+After finalize. Process 9
+After finalize. Process 5
+After finalize. Process 3
+After finalize. Process 7
+After finalize. Process 1
+After finalize. Process 0
+After finalize. Process 10
+After finalize. Process 2
+After finalize. Process 8
+After finalize. Process 6
+After finalize. Process 4
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 7 of 12 ready.
+Process 9 of 12 ready.
+Process 0 of 12 ready.
+Process 8 of 12 ready.
+Process 11 of 12 ready.
+Process 5 of 12 ready.
+Process 2 of 12 ready.
+Process 3 of 12 ready.
+Process 1 of 12 ready.
+Process 6 of 12 ready.
+Process 4 of 12 ready.
+Process 10 of 12 ready.
+After finalize. Process 3
+After finalize. Process 11
+After finalize. Process 7
+After finalize. Process 8
+After finalize. Process 0
+After finalize. Process 1
+After finalize. Process 9
+After finalize. Process 5
+After finalize. Process 2
+After finalize. Process 6
+After finalize. Process 4
+After finalize. Process 10
+--------------------------------------------------------------------------
+WARNING: It appears that your OpenFabrics subsystem is configured to only
+allow registering part of your physical memory.  This can cause MPI jobs to
+run with erratic performance, hang, and/or crash.
+
+This may be caused by your OpenFabrics vendor limiting the amount of
+physical memory that can be registered.  You should investigate the
+relevant Linux kernel module parameters that control how much physical
+memory can be registered, and increase them to allow registering all
+physical memory on your machine.
+
+See this Open MPI FAQ item for more information on these Linux kernel module
+parameters:
+
+    http://www.open-mpi.org/faq/?category=openfabrics#ib-locked-pages
+
+  Local host:              b7
+  Registerable memory:     32768 MiB
+  Total memory:            128899 MiB
+
+Your MPI job will continue, but may be behave poorly and/or hang.
+--------------------------------------------------------------------------
+Process 5 of 12 ready.
+Process 7 of 12 ready.
+Process 9 of 12 ready.
+Process 6 of 12 ready.
+Process 1 of 12 ready.
+Process 2 of 12 ready.
+Process 3 of 12 ready.
+Process 8 of 12 ready.
+Process 0 of 12 ready.
+Process 11 of 12 ready.
+Process 4 of 12 ready.
+Process 10 of 12 ready.
+After finalize. Process 5
+After finalize. Process 7
+After finalize. Process 9
+After finalize. Process 10
+After finalize. Process 0
+After finalize. Process 3
+After finalize. Process 8
+After finalize. Process 11
+After finalize. Process 6
+After finalize. Process 1
+After finalize. Process 2
+After finalize. Process 4

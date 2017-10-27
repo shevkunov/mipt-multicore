@@ -2,8 +2,10 @@
 #include <stdlib.h>
 #include <mpi.h>
 
+// #define LOG
 int myrank, size;
 MPI_Status status;
+
 
 double time_begin, time_end;
 
@@ -35,9 +37,9 @@ void init() {
     c = 380;
     lambda = 401;
     k = lambda / (rho * c);
-    h = 0.001;
-    tau = 0.001;
-    T = 1; // 60
+    h = 0.01; // 0.001
+    tau = 0.1; //0.001
+    T = 60; // 60, 1
 
     u0 = 5;
 
@@ -106,6 +108,7 @@ int get_y_border(int y_cnt, int rank) {
 }
 
 void multithread_solve() {
+    MPI_Request request;
     int x_cnt = Lx / h + 1;  // a[0][0] - (0,0), a[50][50] - (0.5, 0.5)
     int y_cnt = Ly / h + 1;
 
@@ -165,44 +168,58 @@ void multithread_solve() {
 
         if (myrank % 2) {
             // send - recieve
-            if (myrank) {
-                MPI_Send(u[1], x_cnt, MPI_DOUBLE,
-                        myrank - 1, myrank, MPI_COMM_WORLD);
-            }
-            if (myrank + 1 != size) {
-                MPI_Send(u[my_y_cnt - 2], x_cnt, MPI_DOUBLE,
-                        myrank + 1, myrank, MPI_COMM_WORLD);
-            }
 
             if (myrank) {
-                MPI_Recv(u[0], x_cnt, MPI_DOUBLE, myrank - 1, myrank - 1,
-                                    MPI_COMM_WORLD, &status);
+#ifdef LOG
+                printf("send A (%d)\n", myrank);
+                fflush(stdout);
+#endif
+                MPI_Sendrecv(u[1], x_cnt, MPI_DOUBLE, myrank - 1, 0*size + myrank-1,
+                            u[0], x_cnt, MPI_DOUBLE, myrank - 1, 1*size + myrank-1,
+                            MPI_COMM_WORLD, &status);
             }
+            
             if (myrank + 1 != size) {
-                MPI_Recv(u[my_y_cnt - 1], x_cnt, MPI_DOUBLE,
-                        myrank + 1, myrank + 1, MPI_COMM_WORLD, &status);
+#ifdef LOG
+                printf("send B (%d)\n", myrank);
+                fflush(stdout);
+#endif
+                MPI_Sendrecv(u[my_y_cnt - 2], x_cnt, MPI_DOUBLE, myrank + 1, 2*size + myrank,
+                            u[my_y_cnt - 1], x_cnt, MPI_DOUBLE, myrank + 1, 3*size + myrank,
+                            MPI_COMM_WORLD, &status);
             }
+#ifdef LOG
+            printf("send end (%d)\n", myrank);
+            fflush(stdout);
+#endif
+
         } else {
             // recieve - send
-
             if (myrank + 1 != size) {
-                MPI_Recv(u[my_y_cnt - 1], x_cnt, MPI_DOUBLE,
-                        myrank + 1, myrank + 1, MPI_COMM_WORLD, &status);
+#ifdef LOG
+                printf("send A (%d)\n", myrank);
+                fflush(stdout);
+#endif
+                MPI_Sendrecv(u[my_y_cnt - 2], x_cnt, MPI_DOUBLE, myrank + 1, 1*size + myrank, 
+                            u[my_y_cnt - 1], x_cnt, MPI_DOUBLE, myrank + 1, 0*size + myrank,
+                            MPI_COMM_WORLD, &status);
             }
+            
             if (myrank) {
-                MPI_Recv(u[0], x_cnt, MPI_DOUBLE, myrank - 1, myrank - 1,
-                                    MPI_COMM_WORLD, &status);
+#ifdef LOG
+                printf("send B (%d)\n", myrank);
+                fflush(stdout);
+#endif
+                MPI_Sendrecv(u[1], x_cnt, MPI_DOUBLE, myrank - 1, 3*size + myrank -1, 
+                            u[0], x_cnt, MPI_DOUBLE, myrank - 1, 2*size + myrank-1,
+                            MPI_COMM_WORLD, &status);
             }
+            
+#ifdef LOG
+            printf("send end (%d)\n", myrank);
+            fflush(stdout);
+#endif
 
-
-            if (myrank + 1 != size) {
-                MPI_Send(u[my_y_cnt - 2], x_cnt, MPI_DOUBLE,
-                        myrank + 1, myrank, MPI_COMM_WORLD);
-            }
-            if (myrank) {
-                MPI_Send(u[1], x_cnt, MPI_DOUBLE,
-                        myrank - 1, myrank, MPI_COMM_WORLD);
-            }
         }
         time_now += tau;
     }
@@ -327,9 +344,6 @@ int main(int argc, char *argv[])
         solo_solve();
     	time_end = MPI_Wtime();
     }
-
-
-
 
     if (myrank == 0) {
         time_fname[9] = size % 10 + '0';

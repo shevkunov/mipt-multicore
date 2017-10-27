@@ -17,7 +17,7 @@
 # mpicc main.c -std="c99"
 for ((i = 1; i <= 12; ++i))
 do
-    for ((j = 0; j < 3; ++j))
+    for ((j = 0; j < 7; ++j))
     do		
         mpiexec -np $i ./a.out
     done

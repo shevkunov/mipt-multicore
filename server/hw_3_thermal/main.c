@@ -108,7 +108,6 @@ int get_y_border(int y_cnt, int rank) {
 }
 
 void multithread_solve() {
-    MPI_Request request;
     int x_cnt = Lx / h + 1;  // a[0][0] - (0,0), a[50][50] - (0.5, 0.5)
     int y_cnt = Ly / h + 1;
 
@@ -222,6 +221,166 @@ void multithread_solve() {
 
         }
         time_now += tau;
+    }
+
+    MPI_Barrier(MPI_COMM_WORLD);
+    time_end = MPI_Wtime();
+#ifdef LOG
+    printf("Finalization...");
+    fflush(stdout);
+#endif
+    if (myrank == 0) {
+        double** u_final = malloc_array(y_cnt, x_cnt, -1e9);
+        for (int i = 0; i < my_y_cnt; ++i) {
+            for (int j = 0; j < x_cnt; ++j) {
+                u_final[i][j] = u[i][j];
+            }
+        }
+
+        for (int rk = 1; rk < size; ++rk) {
+            int y_l = get_y_border(y_cnt, rk);
+            int y_r = get_y_border(y_cnt, rk + 1);
+            for (int i = y_l; i < y_r; ++i) {
+#ifdef LOG
+                printf("Master recv %d...", i);
+                fflush(stdout);
+#endif
+                MPI_Recv(u_final[i], x_cnt, MPI_DOUBLE, rk, rk,
+                                    MPI_COMM_WORLD, &status);
+            }
+        }
+
+        for (int j = 0; j < x_cnt; ++j) {
+            u_final[y_cnt - 1][j] = ur;
+        }
+#ifdef LOG
+        printf("Master recved all");
+        fflush(stdout);
+#endif
+        save_data(u_final, y_cnt, x_cnt);
+    } else {
+        int rightest = my_y_cnt - 1;
+        if (myrank + 1 == size) {
+            rightest += 1;
+        }
+        for (int i = 1; i < rightest; ++i) {
+#ifdef LOG
+            printf("Slave send %d...", i);
+            fflush(stdout);
+#endif
+            MPI_Send(u[i], x_cnt, MPI_DOUBLE,
+                    0, myrank, MPI_COMM_WORLD);
+        }
+#ifdef LOG
+        printf("Slave sent all");
+        fflush(stdout);
+#endif
+    }
+}
+
+void multithread_solve_fool() {
+    int x_cnt = Lx / h + 1;  // a[0][0] - (0,0), a[50][50] - (0.5, 0.5)
+    int y_cnt = Ly / h + 1;
+
+    int my_y_l = get_y_border(y_cnt, myrank);
+    int my_y_r = get_y_border(y_cnt, myrank + 1);
+    int my_y_cnt = my_y_r - my_y_l + 2;
+#ifdef LOG
+    printf("Id (%d), my_y_l = %d, my_y_r = %d, my_y_cnt = %d\n",
+           myrank, my_y_l, my_y_r, my_y_cnt);
+    fflush(stdout);
+#endif
+
+    double koeff = k * tau / (h * h);
+    double time_now = 0.;
+
+    double** u;
+    double** v;
+
+    u = malloc_array(my_y_cnt, x_cnt, u0);
+    v = malloc_array(my_y_cnt, x_cnt, u0);
+
+    MPI_Barrier(MPI_COMM_WORLD);
+    time_begin = MPI_Wtime();
+
+    for (int i = 0; i < my_y_cnt; ++i) {
+        v[i][0] = u[i][0] =  ud;
+        v[i][x_cnt - 1] = u[i][x_cnt - 1] = uu;
+    }
+
+    for (int i = 0; i < x_cnt; ++i) {
+        if (my_y_l == 1) {
+            v[0][i] = u[0][i] =  ul;
+        }
+        if (my_y_r + 1 == y_cnt) {
+            v[my_y_cnt - 1][i] = u[my_y_cnt - 1][i] = ur;
+        }
+    }
+
+    while (time_now < T) {
+#ifdef LOG
+        printf("while %f, (%d)\n", time_now, myrank);
+        fflush(stdout);
+#endif
+        for (int i = 1; i < my_y_cnt - 1; ++i) {
+            for (int j = 1; j < x_cnt - 1; ++j) {
+                v[i][j] = u[i][j] +
+                        koeff * (u[i+1][j] - 2. * u[i][j] + u[i-1][j]);
+            }
+        }
+
+        for (int i = 1; i < my_y_cnt - 1; ++i) {
+            for (int j = 1; j < x_cnt - 1; ++j) {
+                u[i][j] = v[i][j] +
+                        koeff * (v[i][j+1] - 2. * v[i][j] + v[i][j-1]);
+            }
+        }
+
+        if (myrank % 2) {
+            // send - recieve
+            if (myrank) {
+                MPI_Send(u[1], x_cnt, MPI_DOUBLE,
+                         myrank - 1, myrank, MPI_COMM_WORLD);
+            } 
+            if (myrank + 1 != size) {
+                MPI_Send(u[my_y_cnt - 2], x_cnt, MPI_DOUBLE,
+                         myrank + 1, myrank, MPI_COMM_WORLD);
+            }
+
+            if (myrank) {
+                MPI_Recv(u[0], x_cnt, MPI_DOUBLE, myrank - 1, myrank - 1,
+                                     MPI_COMM_WORLD, &status);
+            }
+            if (myrank + 1 != size) {
+                MPI_Recv(u[my_y_cnt - 1], x_cnt, MPI_DOUBLE,
+                     myrank + 1, myrank + 1, MPI_COMM_WORLD, &status);
+
+            }
+
+        } else {
+         // recieve - send
+
+            if (myrank + 1 != size) {
+                MPI_Recv(u[my_y_cnt - 1], x_cnt, MPI_DOUBLE,
+                         myrank + 1, myrank + 1, MPI_COMM_WORLD, &status);
+            }
+            if (myrank) {
+                MPI_Recv(u[0], x_cnt, MPI_DOUBLE, myrank - 1, myrank - 1,
+                                 MPI_COMM_WORLD, &status);
+            }
+
+
+            if (myrank + 1 != size) {
+                MPI_Send(u[my_y_cnt - 2], x_cnt, MPI_DOUBLE,
+                     myrank + 1, myrank, MPI_COMM_WORLD);
+            }
+            if (myrank) {
+                MPI_Send(u[1], x_cnt, MPI_DOUBLE,
+                     myrank - 1, myrank, MPI_COMM_WORLD);
+            }
+        }
+        time_now += tau;
+
     }
 
     MPI_Barrier(MPI_COMM_WORLD);

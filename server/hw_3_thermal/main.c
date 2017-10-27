@@ -35,9 +35,9 @@ void init() {
     c = 380;
     lambda = 401;
     k = lambda / (rho * c);
-    h = 0.01;
-    tau = 0.1;
-    T = 60;
+    h = 0.001;
+    tau = 0.001;
+    T = 1; // 60
 
     u0 = 5;
 
@@ -127,6 +127,9 @@ void multithread_solve() {
     u = malloc_array(my_y_cnt, x_cnt, u0);
     v = malloc_array(my_y_cnt, x_cnt, u0);
 
+    MPI_Barrier(MPI_COMM_WORLD);
+    time_begin = MPI_Wtime();
+
     for (int i = 0; i < my_y_cnt; ++i) {
         v[i][0] = u[i][0] =  ud;
         v[i][x_cnt - 1] = u[i][x_cnt - 1] = uu;
@@ -160,7 +163,7 @@ void multithread_solve() {
             }
         }
 
-        if (myrank & 1) {
+        if (myrank % 2) {
             // send - recieve
             if (myrank) {
                 MPI_Send(u[1], x_cnt, MPI_DOUBLE,
@@ -181,26 +184,31 @@ void multithread_solve() {
             }
         } else {
             // recieve - send
-            if (myrank) {
-                MPI_Recv(u[0], x_cnt, MPI_DOUBLE, myrank - 1, myrank - 1,
-                                    MPI_COMM_WORLD, &status);
-            }
+
             if (myrank + 1 != size) {
                 MPI_Recv(u[my_y_cnt - 1], x_cnt, MPI_DOUBLE,
                         myrank + 1, myrank + 1, MPI_COMM_WORLD, &status);
             }
-
             if (myrank) {
-                MPI_Send(u[1], x_cnt, MPI_DOUBLE,
-                        myrank - 1, myrank, MPI_COMM_WORLD);
+                MPI_Recv(u[0], x_cnt, MPI_DOUBLE, myrank - 1, myrank - 1,
+                                    MPI_COMM_WORLD, &status);
             }
+
+
             if (myrank + 1 != size) {
                 MPI_Send(u[my_y_cnt - 2], x_cnt, MPI_DOUBLE,
                         myrank + 1, myrank, MPI_COMM_WORLD);
             }
+            if (myrank) {
+                MPI_Send(u[1], x_cnt, MPI_DOUBLE,
+                        myrank - 1, myrank, MPI_COMM_WORLD);
+            }
         }
         time_now += tau;
     }
+
+    MPI_Barrier(MPI_COMM_WORLD);
+    time_end = MPI_Wtime();
 #ifdef LOG
     printf("Finalization...");
     fflush(stdout);
@@ -308,19 +316,20 @@ int main(int argc, char *argv[])
 
     printf("Process %d of %d ready.\n", myrank, size);
 
-    MPI_Barrier(MPI_COMM_WORLD);
-    time_begin = MPI_Wtime();
+    
 
     init();
 
     if (size > 1) {
         multithread_solve();
     } else {
+    	time_begin = MPI_Wtime();
         solo_solve();
+    	time_end = MPI_Wtime();
     }
 
-    MPI_Barrier(MPI_COMM_WORLD);
-    time_end = MPI_Wtime();
+
+
 
     if (myrank == 0) {
         time_fname[9] = size % 10 + '0';

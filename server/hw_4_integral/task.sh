@@ -14,10 +14,10 @@
 
 # run for your live!
 
-# mpicc main.c -std="c99"
+# mpicc main.c -std="c99" -O2
 for ((i = 1; i <= 12; ++i))
 do
-    for ((j = 0; j < 7; ++j))
+    for ((j = 0; j < 1; ++j))
     do		
         ./a.out $i
     done

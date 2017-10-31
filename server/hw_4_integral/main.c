@@ -20,6 +20,17 @@ int main(int argc, char* argv[]) {
     double ans1 = 0.;
     double ans2 = 0.;
     double begin1, end1, begin2, end2;
+
+    // BEGIN Thread's local variables
+    double my_l_bound;
+    double my_r_bound;
+    
+    double last_value;
+    double local_answer;
+    
+    double x;
+    double new_value;
+    // END 
     
     FILE* log = fopen("times.txt", "a");
     
@@ -45,18 +56,18 @@ int main(int argc, char* argv[]) {
 
     
     begin1 = omp_get_wtime();
-    #pragma omp parallel shared(ans1) private(my_id)
+    #pragma omp parallel shared(ans1) private(my_id, my_l_bound, my_r_bound, last_value, local_answer, x, new_value)
         {
             my_id = omp_get_thread_num();
-            double my_l_bound = (r_bound - l_bound) / num_threads * my_id;
-            double my_r_bound = (r_bound - l_bound) / num_threads * (my_id + 1);
-            
-            double last_value = f(my_l_bound);
-            double local_answer = 0.;
-            
+            my_l_bound = ((r_bound - l_bound) / num_threads) * my_id;
+            my_r_bound = ((r_bound - l_bound) / num_threads) * (my_id + 1);            
+            last_value = f(my_l_bound);
+            local_answer = 0.;
+#ifdef LOG
             printf("Parallel part, myid = %d, %f, %f\n", my_id, my_l_bound, my_r_bound);
-            for (double x = my_l_bound + step; x <= my_r_bound; x += step) {
-                double new_value = f(x);
+#endif
+            for (x = my_l_bound + step; x <= my_r_bound; x += step) {
+                new_value = 4. / (1. + x*x);
                 local_answer += (last_value + new_value) / 2. * step;
                 last_value = new_value;
             }
@@ -70,18 +81,19 @@ int main(int argc, char* argv[]) {
     printf("ans1 = %.9f\n", ans1);
     
     begin2 = omp_get_wtime();
-    #pragma omp parallel reduction (+:ans2) private(my_id)
+    #pragma omp parallel reduction (+:ans2) private(my_id) private(my_l_bound) private(my_r_bound) private(last_value) private(local_answer) private(x) private(new_value)
         {
             my_id = omp_get_thread_num();
-            double my_l_bound = (r_bound - l_bound) / num_threads * my_id;
-            double my_r_bound = (r_bound - l_bound) / num_threads * (my_id + 1);
+            my_l_bound = ((r_bound - l_bound) / num_threads) * my_id;
+            my_r_bound = ((r_bound - l_bound) / num_threads) * (my_id + 1);
             
-            double last_value = f(my_l_bound);
-            double local_answer = 0.;
-            
+            last_value = f(my_l_bound);
+            local_answer = 0.;
+#ifdef LOG      
             printf("Parallel part, myid = %d, %f, %f\n", my_id, my_l_bound, my_r_bound);
-            for (double x = my_l_bound + step; x <= my_r_bound; x += step) {
-                double new_value = f(x);
+#endif
+            for (x = my_l_bound + step; x <= my_r_bound; x += step) {
+                new_value = 4. / (1. + x*x);
                 local_answer += (last_value + new_value) / 2. * step;
                 last_value = new_value;
             }

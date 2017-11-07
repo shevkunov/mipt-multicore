@@ -68,12 +68,11 @@ int main(int argc, char* argv[]) {
         }
     end1 = omp_get_wtime();
     printf("ans1 = %.9f, time = %.9f\n", ans1, end1 - begin1);
-    
+
+    ans2 = 30;    
     begin2 = omp_get_wtime();
     #pragma omp parallel reduction (+:ans2)
         {
-      
-            ans2 = 0;
             int my_id = omp_get_thread_num();
             int block = ps_per_thread_int
                 + (ps_per_thread_rem > my_id);

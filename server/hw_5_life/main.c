@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <omp.h>
 
-
-
 char** malloc_array(int y_cnt, int x_cnt, char init_value) {
     char** a;
     a = malloc(sizeof(char*) * y_cnt);
@@ -26,15 +24,15 @@ void free_array(char** a, int y_cnt) {
 int n, m;
 
 void set(char** map, int x, int y) {
-    map[x][y] = ~0;
+    map[(x + n ) % n][(y + m) % m] = 1;
 }
 
 void kill(char** map, int x, int y) {
-    map[x][y] = 0;
+    map[(x + n) % n][(y + m) % m] = 0;
 }
 
 char get(char** map, int x, int y) {
-    return map[x][y];
+    return map[(x + n) % n][(y + m) % m];
 }
 
 char** read_data(const char* fname) {
@@ -83,12 +81,59 @@ void write_data(char** map, const char* fname) {
     fclose(f);
 }
 
+int get_neghbours(char** map, int x, int y) {
+    int result = 0;
+    for (int i = x - 1; i <= x + 1; ++i) {
+        for (int j = y - 1; j <= y + 1; ++j) {
+            if ((i != x) || (j != y)) {
+                result += get(map, i, j); 
+            }
+        }
+    }
+    return result;
+}
+
+int solo_solution(char* fname, int steps) {
+    char** maps[2]; 
+    maps[1] = read_data(fname);
+    maps[0] = malloc_array(n, m, 0);
+    
+    int iteration = 0;
+    for (int iteration = 0; iteration < steps; ++iteration) {
+        char** temp;
+        temp = maps[0];
+        maps[0] = maps[1];
+        maps[1] = temp;
+        
+        for (int i = 0; i < n; ++i) {
+            for (int j = 0; j < n; ++j) {
+                int neighbours = get_neighbours(maps[0], i, j);
+                if (get(maps[0], i, j)) {
+                    // still alive
+                    if ((neighbours >= 2) && (neighbours <= 3)) {
+                        set(maps[1], i, j);
+                    } else {
+                        kill(maps[1], i, j);
+                    }
+                } else {
+                    // creal cell
+                    if (neighbours == 3) {
+                        set(maps[1], i, j);
+                    } else {
+                        kill(maps[1], i, j);
+                    }
+                }               
+            }
+        }
+    }
+    write_data(map, "state_copy.dat");   
+    
+}
+
 int main(int argc, char* argv[]) {
     (void)argc;
     (void)argv;
-    
     const char* fname = "state.dat";
-    char** map = read_data(fname);
-    write_data(map, "state_copy.dat");   
+    solo_solution(fname, 100);
     return 0;
 }

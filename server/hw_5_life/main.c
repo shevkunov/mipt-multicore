@@ -2,10 +2,11 @@
 #include <stdlib.h>
 #include <omp.h>
 
-FILE* open_file(char* fname, const char *__restrict how) {
+FILE* open_file(const char* fname, const char *__restrict how) {
     FILE *f = fopen(fname, how);
     if (!f) {
         printf("Unable to open file %s. Terminated.\n", fname);
+        fflush(stdout);
         exit(-1);
     }
     return f;
@@ -54,6 +55,7 @@ char** read_data(const char* fname) {
     fscanf(f, "%d %d\n", &n, &m);
     if (n <= 0 || m <= 0) {
         printf("Invalid or zero plot size.\n");
+        fflush(stdout);
         exit(-1);
     }
 
@@ -95,22 +97,24 @@ int get_neighbours(char** map, int x, int y) {
 }
 
 void write_human_log(FILE* file, char** map) {
-    char* alive = "#";
-    char* dead = ".";
+    char alive = '#';
+    char dead = '.';
     fprintf(file, "___Iteration___\n");
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < m; ++j) {
             if (get(map, i, j)) {
-                fprintf(file, alive);
+                fputc(alive, file);
             } else {
-                fprintf(file, dead);
+                fputc(dead, file);
             }
         }
         fprintf(file, "\n");
     }
 }
 
-void solo_solution(char* fname_in, char* fname_out, char* human_log_fname, int steps) {
+double solo_solution(const char* fname_in, const char* fname_out,
+                    const char* human_log_fname, int steps) {
+    /* Really seems to be faster than combo_solution with 1 thread (6.28 <> 6.4) */
     char** maps[2];
     maps[1] = read_data(fname_in);
     maps[0] = malloc_array(n, m, 0);
@@ -118,15 +122,15 @@ void solo_solution(char* fname_in, char* fname_out, char* human_log_fname, int s
     FILE* human_log_file = 0;
     if (human_log_fname) {
         human_log_file = open_file(human_log_fname, "wt");
+        write_human_log(human_log_file, maps[1]);
     }
-
-    write_human_log(human_log_file, maps[1]);
+    
+    double begin = omp_get_wtime();
     for (int iteration = 0; iteration < steps; ++iteration) {
         char** temp;
         temp = maps[0];
         maps[0] = maps[1];
         maps[1] = temp;
-
         for (int i = 0; i < n; ++i) {
             for (int j = 0; j < m; ++j) {
                 int neighbours = get_neighbours(maps[0], i, j);
@@ -147,21 +151,112 @@ void solo_solution(char* fname_in, char* fname_out, char* human_log_fname, int s
                 }
             }
         }
-        write_human_log(human_log_file, maps[1]);
+        if (human_log_fname) {
+            write_human_log(human_log_file, maps[1]);
+        }
     }
+    double end = omp_get_wtime();
     if (human_log_fname) {
         fclose(human_log_file);
     }
     write_data(maps[1], fname_out);
+    return end - begin;
+}
+
+
+double combo_solution(const char* fname_in, const char* fname_out,
+                     const char* human_log_fname, int steps) {
+    char** maps[2];
+    maps[1] = read_data(fname_in);
+    maps[0] = malloc_array(n, m, 0);
+
+    FILE* human_log_file = 0;
+    if (human_log_fname) {
+        human_log_file = open_file(human_log_fname, "wt");
+        write_human_log(human_log_file, maps[1]);
+    }
+    
+    double begin = omp_get_wtime();
+    for (int iteration = 0; iteration < steps; ++iteration) {
+        char** temp;
+        temp = maps[0];
+        maps[0] = maps[1];
+        maps[1] = temp;
+        #pragma omp parallel
+        {
+            #pragma omp for collapse(2)
+            for (int i = 0; i < n; ++i) {
+                for (int j = 0; j < m; ++j) {
+                    int neighbours = get_neighbours(maps[0], i, j);
+                    if (get(maps[0], i, j)) {
+                        // still alive
+                        if ((neighbours >= 2) && (neighbours <= 3)) {
+                            set(maps[1], i, j);
+                        } else {
+                            kill(maps[1], i, j);
+                        }
+                    } else {
+                        // creal cell
+                        if (neighbours == 3) {
+                            set(maps[1], i, j);
+                        } else {
+                            kill(maps[1], i, j);
+                        }
+                    }
+                }
+            }
+        }
+        if (human_log_fname) {
+            write_human_log(human_log_file, maps[1]);
+        }
+    }
+    double end = omp_get_wtime();
+    if (human_log_fname) {
+        fclose(human_log_file);
+    }
+    write_data(maps[1], fname_out);
+    return end - begin;
 }
 
 int main(int argc, char* argv[]) {
-    (void)argc;
-    (void)argv;
+#ifdef _OPENNP
+    printf("OpenMP is supported! %d\n", _OPENMP);
+#endif
+    int iterations = 1;
+    int num_threads = 1;
+    int num_procs = 0;
+    
+    if (argc == 2) {
+        iterations = atoi(argv[1]);
+    } else if (argc == 3) {
+        iterations = atoi(argv[1]);    
+        num_threads = atoi(argv[2]);
+    }
+    
+    num_procs = omp_get_num_procs();
+    printf("Num of processors = %d \n", num_procs);
+    omp_set_num_threads(num_threads);
+    printf("Number of threads = %d \n", num_threads);
+    
+    FILE* log = open_file("times.txt", "a");
+    
+    
     const char* fname_in = "state.dat";
     const char* fname_out = "state_copy.dat";
-    const char* human_log_fname = "human_log.dat";
-    solo_solution(fname_in, fname_out, human_log_fname, 100);
+    const char* human_log_fname = 0; // "human_log.dat";
+    
+    double critical_time = -1.;
+    if (num_threads == 1) {
+        critical_time = (
+            solo_solution(fname_in, fname_out, human_log_fname, iterations)
+        );
+    } else {
+        critical_time = (
+            combo_solution(fname_in, fname_out, human_log_fname, iterations)
+        );
+    }
+    fprintf(log, "[%d, %.9f],\n", num_threads, critical_time);
+    fclose(log);
     return 0;
 }
 
